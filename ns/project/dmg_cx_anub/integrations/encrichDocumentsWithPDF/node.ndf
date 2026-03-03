@@ -83,7 +83,7 @@
   <value name="retry_interval">0</value>
   <record name="node_hints" javaclass="com.wm.util.Values">
     <value name="lastModifiedBy">Anusha.Bonam@ibm.com</value>
-    <value name="lastModifiedDate">1772526978287</value>
+    <value name="lastModifiedDate">1772527025638</value>
     <value name="displayName">encrichDocumentsWithPDF</value>
     <value name="description"></value>
     <record name="stepNodeHints" javaclass="com.wm.util.Values">
@@ -104,8 +104,8 @@
         <array name="lookupTransformer" type="object" depth="1" javaclass="java.lang.Object">
         </array>
         <value name="nodePathForDebug">0</value>
+        <number name="ui_step_index" type="Long">1</number>
       </record>
-      <null name="/0/0"/>
       <record name="/1" javaclass="com.wm.util.Values">
         <value name="name">REPEAT</value>
         <value name="itemType">CONTROLS</value>

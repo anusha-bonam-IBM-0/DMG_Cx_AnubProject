@@ -83,7 +83,7 @@
   <value name="retry_interval">0</value>
   <record name="node_hints" javaclass="com.wm.util.Values">
     <value name="lastModifiedBy">Anusha.Bonam@ibm.com</value>
-    <value name="lastModifiedDate">1772527092331</value>
+    <value name="lastModifiedDate">1772527179231</value>
     <value name="displayName">encrichDocumentsWithPDF</value>
     <value name="description"></value>
     <record name="stepNodeHints" javaclass="com.wm.util.Values">
@@ -144,6 +144,8 @@
         <number name="lineNumberForDebug" type="Long">3</number>
         <Boolean name="serviceReferenceResolved">true</Boolean>
         <value name="nodePathForDebug">1.0</value>
+        <null name="mapSet"/>
+        <null name="outputMapSet"/>
       </record>
     </record>
   </record>

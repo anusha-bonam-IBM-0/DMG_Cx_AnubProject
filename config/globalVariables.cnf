@@ -18,6 +18,11 @@
         <value name="value">CvKRxmWWUUTpc3Un78i97NA8ujYa</value>
         <value name="isSecure">false</value>
       </record>
+      <record javaclass="com.wm.data.ISMemDataImpl">
+        <value name="key">pdf_source_endpoint</value>
+        <value name="value">https://apim-gw-uat-kus.cevalogistics.com/fm/documents/1.1.0/download</value>
+        <value name="isSecure">false</value>
+      </record>
     </array>
   </record>
 </IDataXMLCoder>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<FLOW VERSION="3.2" CLEANUP="false">
+  <COMMENT></COMMENT>
+
+  <!-- nodes -->
+
+<MAP NAME="TRANSFORM" TIMEOUT="" MODE="STANDALONE">
+  <COMMENT>set label for refreshAccessToken cache</COMMENT>
+
+  <!-- nodes -->
+
+<MAPDELETE FIELD="/accessToken;1;0">
+</MAPDELETE>
+
+<MAPSET NAME="Setter" OVERWRITE="true" VARIABLES="false" GLOBALVARIABLES="false" FIELD="/keyLabel;1;0">
+  <DATA ENCODING="XMLValues" I18N="true">
+
+<Values version="2.0">
+  <value name="xml">pdf_acces_token</value>
+</Values>
+</DATA>
+</MAPSET>
+</MAP>
+
+<SWITCH NAME="SWITCH"  SWITCHKEY="/reset">
+
+  <!-- nodes -->
+
+<SEQUENCE EXIT-ON="FAILURE" FORM="CASE"  CASEVALUE="true">
+
+  <!-- nodes -->
+
+<SEQUENCE NAME="NEW" EXIT-ON="FAILURE">
+</SEQUENCE>
+</SEQUENCE>
+
+<SEQUENCE NAME="$default" EXIT-ON="FAILURE" FORM="CASE"  CASEVALUE="$default">
+
+  <!-- nodes -->
+
+<SEQUENCE NAME="NEW" EXIT-ON="FAILURE">
+</SEQUENCE>
+</SEQUENCE>
+</SWITCH>
+</FLOW>

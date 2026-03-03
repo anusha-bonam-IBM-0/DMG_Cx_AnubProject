@@ -13,6 +13,11 @@
         <value name="value">3</value>
         <value name="isSecure">false</value>
       </record>
+      <record javaclass="com.wm.data.ISMemDataImpl">
+        <value name="key">pdf_oauth_client_id</value>
+        <value name="value">CvKRxmWWUUTpc3Un78i97NA8ujYa</value>
+        <value name="isSecure">false</value>
+      </record>
     </array>
   </record>
 </IDataXMLCoder>

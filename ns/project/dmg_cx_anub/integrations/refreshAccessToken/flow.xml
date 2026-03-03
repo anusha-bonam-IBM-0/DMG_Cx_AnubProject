@@ -1391,6 +1391,7 @@
 </INVOKE>
 
 <MAP NAME="TRANSFORM" TIMEOUT="" MODE="STANDALONE">
+  <COMMENT>extract access token</COMMENT>
   <MAPTARGET>
 
 <Values version="2.0">
@@ -1423,14 +1424,8 @@
         <value name="is_global">false</value>
       </record>
       <record javaclass="com.wm.util.Values">
-        <value name="node_type">field</value>
+        <value name="node_type">unknown</value>
         <value name="node_subtype">unknown</value>
-        <value name="node_comment"></value>
-        <record name="node_hints" javaclass="com.wm.util.Values">
-          <value name="field_largerEditor">false</value>
-          <value name="field_password">false</value>
-          <value name="field_usereditable">false</value>
-        </record>
         <value name="is_public">false</value>
         <value name="field_name">accessToken</value>
         <value name="field_type">string</value>
@@ -1514,6 +1509,15 @@
 <MAPDELETE FIELD="/accessTokenWrapper;2;0">
 </MAPDELETE>
 </MAP>
+</SEQUENCE>
+
+<SEQUENCE EXIT-ON="FAILURE" FORM="CASE"  CASEVALUE="$default">
+
+  <!-- nodes -->
+
+<EXIT NAME="EXIT" FROM="$flow" SIGNAL="FAILURE" FAILURE-MESSAGE="Failed to fetch OAuth access token">
+  <COMMENT></COMMENT>
+</EXIT>
 </SEQUENCE>
 </SWITCH>
 </FLOW>

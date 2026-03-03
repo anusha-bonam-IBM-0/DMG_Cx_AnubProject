@@ -1,0 +1,9 @@
+version: "1.0"
+info:
+  model: int-scaffold
+packages:
+- name: DMG_Cx_AnubProject
+  gitServerName: AnushaBGIT
+  gitUrl: https://github.com/anusha-bonam-IBM-0
+  gitUsername: anusha-bonam-IBM-0
+  gitBranch: main

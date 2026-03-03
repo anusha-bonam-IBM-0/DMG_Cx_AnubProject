@@ -83,7 +83,7 @@
   <value name="retry_interval">0</value>
   <record name="node_hints" javaclass="com.wm.util.Values">
     <value name="lastModifiedBy">Anusha.Bonam@ibm.com</value>
-    <value name="lastModifiedDate">1772527179231</value>
+    <value name="lastModifiedDate">1772529253155</value>
     <value name="displayName">encrichDocumentsWithPDF</value>
     <value name="description"></value>
     <record name="stepNodeHints" javaclass="com.wm.util.Values">
@@ -147,6 +147,143 @@
         <null name="mapSet"/>
         <null name="outputMapSet"/>
       </record>
+      <record name="/1/1" javaclass="com.wm.util.Values">
+        <value name="name">REPEATFORCOUNT</value>
+        <value name="itemType">CONTROLS</value>
+        <value name="defaultValue">1</value>
+        <value name="nodePathNew">1.1</value>
+        <number name="nodeIndex" type="Long">1</number>
+        <number name="lineNumberForDebug" type="Long">4</number>
+        <record name="value" javaclass="com.wm.util.Values">
+          <value name="name">/maxRetries</value>
+          <value name="field_name">maxRetries</value>
+          <value name="type">string</value>
+          <value name="dim">0</value>
+          <null name="rec_ref"/>
+          <Boolean name="isLink">false</Boolean>
+          <null name="wrapper_type"/>
+        </record>
+      </record>
+      <record name="/1/1/0" javaclass="com.wm.util.Values">
+        <value name="name">SWITCH</value>
+        <value name="itemType">CONTROLS</value>
+        <record name="value" javaclass="com.wm.util.Values">
+          <value name="name">/documents/send_doc_to_customer</value>
+          <value name="field_name">send_doc_to_customer</value>
+          <value name="type">string</value>
+          <value name="dim">0</value>
+          <Boolean name="isLink">false</Boolean>
+          <value name="flow_path">/send_doc_to_customer;1;0</value>
+        </record>
+        <record name="config" javaclass="com.wm.util.Values">
+          <Boolean name="showLeafLabelOnly">true</Boolean>
+          <Boolean name="focusOnLoad">true</Boolean>
+          <Boolean name="resetOnfocusout">true</Boolean>
+          <value name="displayLabel">field_name</value>
+          <value name="toolTipLabel">name</value>
+          <Boolean name="displayIcon">true</Boolean>
+        </record>
+        <value name="nodePathNew">1.1.0</value>
+        <number name="nodeIndex" type="Long">0</number>
+        <number name="lineNumberForDebug" type="Long">5</number>
+      </record>
+      <record name="/1/1/0/0" javaclass="com.wm.util.Values">
+        <value name="name">BRANCH</value>
+        <value name="itemType">CONTROLS</value>
+        <value name="value"></value>
+        <Boolean name="is_empty">false</Boolean>
+        <value name="nodePathNew">1.1.0.0</value>
+        <number name="nodeIndex" type="Long">0</number>
+        <number name="lineNumberForDebug" type="Long">6</number>
+      </record>
+      <record name="/1/1/0/0/0" javaclass="com.wm.util.Values">
+        <null name="name"/>
+        <value name="itemType">SERVICES</value>
+        <record name="serviceInfo" javaclass="com.wm.util.Values">
+          <value name="groupDisplayName">Flow</value>
+          <value name="groupName">flow</value>
+          <null name="services"/>
+        </record>
+        <record name="serviceName" javaclass="com.wm.util.Values">
+          <value name="displayName">debugLog</value>
+          <value name="serviceName">pub.flow:debugLog</value>
+          <value name="transformerSupport">false</value>
+        </record>
+        <number name="ui_step_index" type="Long">7</number>
+        <value name="nodePathNew">1.1.0.0.0</value>
+        <number name="nodeIndex" type="Long">0</number>
+        <number name="lineNumberForDebug" type="Long">7</number>
+        <null name="mapSet"/>
+        <null name="outputMapSet"/>
+      </record>
+      <null name="/1/1/0/0/1"/>
+      <null name="/1/1/0/0/1/0"/>
+      <record name="/1/1/0/0/1/1" javaclass="com.wm.util.Values">
+        <null name="name"/>
+        <value name="itemType">SERVICES</value>
+        <record name="serviceInfo" javaclass="com.wm.util.Values">
+          <value name="groupDisplayName">Client</value>
+          <value name="groupName">client</value>
+          <null name="services"/>
+        </record>
+        <record name="serviceName" javaclass="com.wm.util.Values">
+          <value name="displayName">http</value>
+          <value name="serviceName">pub.client:http</value>
+          <value name="transformerSupport">false</value>
+        </record>
+        <number name="ui_step_index" type="Long">10</number>
+        <value name="nodePathNew">1.1.0.0.1.1</value>
+        <number name="nodeIndex" type="Long">1</number>
+        <number name="lineNumberForDebug" type="Long">10</number>
+        <null name="mapSet"/>
+        <null name="outputMapSet"/>
+      </record>
+      <null name="/1/1/0/0/2"/>
+      <record name="/1/1/0/0/2/0" javaclass="com.wm.util.Values">
+        <value name="name">BRANCH</value>
+        <value name="itemType">CONTROLS</value>
+        <value name="nodePathNew">1.1.0.0.2.0</value>
+        <number name="nodeIndex" type="Long">0</number>
+        <number name="lineNumberForDebug" type="Long">12</number>
+      </record>
+      <record name="/1/1/0/0/2/0/0" javaclass="com.wm.util.Values">
+        <value name="name">EXPRESSION</value>
+        <value name="itemType">CONTROLS</value>
+        <value name="nodePathNew">1.1.0.0.2.0.0</value>
+        <number name="nodeIndex" type="Long">0</number>
+        <number name="lineNumberForDebug" type="Long">13</number>
+      </record>
+      <record name="/1/1/0/0/2/0/0/0" javaclass="com.wm.util.Values">
+        <null name="name"/>
+        <value name="itemType">SERVICES</value>
+        <record name="serviceInfo" javaclass="com.wm.util.Values">
+          <value name="groupDisplayName">Flow</value>
+          <value name="groupName">flow</value>
+          <null name="services"/>
+        </record>
+        <record name="serviceName" javaclass="com.wm.util.Values">
+          <value name="displayName">debugLog</value>
+          <value name="serviceName">pub.flow:debugLog</value>
+          <value name="transformerSupport">false</value>
+        </record>
+        <number name="ui_step_index" type="Long">14</number>
+        <value name="nodePathNew">1.1.0.0.2.0.0.0</value>
+        <number name="nodeIndex" type="Long">0</number>
+        <number name="lineNumberForDebug" type="Long">14</number>
+        <null name="mapSet"/>
+        <null name="outputMapSet"/>
+      </record>
+      <record name="/1/1/0/0/2/0/1" javaclass="com.wm.util.Values">
+        <value name="name">EXPRESSION</value>
+        <value name="itemType">CONTROLS</value>
+      </record>
+      <null name="/1/1/0/0/2/0/1/0"/>
+      <record name="/1/1/0/1" javaclass="com.wm.util.Values">
+        <value name="name">BRANCH</value>
+        <value name="itemType">CONTROLS</value>
+        <value name="value"></value>
+      </record>
+      <null name="/1/1/0/1/0"/>
     </record>
   </record>
   <value name="svc_in_validator_options">none</value>

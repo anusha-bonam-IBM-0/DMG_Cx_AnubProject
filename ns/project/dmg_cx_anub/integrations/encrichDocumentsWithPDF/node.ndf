@@ -32,6 +32,26 @@
           <value name="form_qualified">false</value>
           <value name="is_global">false</value>
         </record>
+        <record javaclass="com.wm.util.Values">
+          <value name="node_type">field</value>
+          <value name="node_subtype">unknown</value>
+          <value name="node_comment"></value>
+          <record name="node_hints" javaclass="com.wm.util.Values">
+            <value name="field_largerEditor">false</value>
+            <value name="field_password">false</value>
+            <value name="field_usereditable">false</value>
+          </record>
+          <value name="is_public">false</value>
+          <value name="field_name">documents</value>
+          <value name="field_type">recref</value>
+          <value name="field_dim">1</value>
+          <value name="nillable">true</value>
+          <value name="form_qualified">false</value>
+          <value name="is_global">false</value>
+          <value name="is_soap_array_encoding_used">true</value>
+          <value name="modifiable">true</value>
+          <value name="rec_ref">project.dmg_cx_anub.documenttypes:Document</value>
+        </record>
       </array>
       <value name="modifiable">true</value>
     </record>
@@ -62,19 +82,52 @@
   <value name="retry_max">0</value>
   <value name="retry_interval">0</value>
   <record name="node_hints" javaclass="com.wm.util.Values">
-    <value name="createdBy">Anusha.Bonam@ibm.com</value>
-    <value name="createdDate">1772526044338</value>
-    <value name="lastModifiedDate">1772526044338</value>
+    <value name="lastModifiedBy">Anusha.Bonam@ibm.com</value>
+    <value name="lastModifiedDate">1772526550201</value>
     <value name="displayName">encrichDocumentsWithPDF</value>
     <value name="description"></value>
     <record name="stepNodeHints" javaclass="com.wm.util.Values">
       <record name="/0" javaclass="com.wm.util.Values">
         <value name="itemType">CONTROLS</value>
         <value name="name">TRANSFORM</value>
+        <value name="nodePathForDebug">0</value>
+        <value name="nodePathNew">0</value>
+        <number name="nodeIndex" type="Long">0</number>
+        <number name="lineNumberForDebug" type="Long">1</number>
       </record>
       <record name="/1" javaclass="com.wm.util.Values">
-        <value name="itemType">ALL</value>
-        <value name="name">NEW</value>
+        <value name="name">REPEAT</value>
+        <value name="itemType">CONTROLS</value>
+        <record name="in_array" javaclass="com.wm.util.Values">
+          <value name="name">/documents</value>
+          <value name="field_name">documents</value>
+          <value name="type">recref</value>
+          <value name="dim">1</value>
+          <value name="rec_ref">project.dmg_cx_anub.documenttypes:Document</value>
+          <Boolean name="isLink">false</Boolean>
+          <null name="wrapper_type"/>
+        </record>
+        <value name="nodePathNew">1</value>
+        <number name="nodeIndex" type="Long">1</number>
+        <number name="lineNumberForDebug" type="Long">2</number>
+      </record>
+      <record name="/1/0" javaclass="com.wm.util.Values">
+        <null name="name"/>
+        <value name="itemType">SERVICES</value>
+        <record name="serviceInfo" javaclass="com.wm.util.Values">
+          <value name="groupDisplayName">Flow</value>
+          <value name="groupName">flow</value>
+          <null name="services"/>
+        </record>
+        <record name="serviceName" javaclass="com.wm.util.Values">
+          <value name="displayName">debugLog</value>
+          <value name="serviceName">pub.flow:debugLog</value>
+          <value name="transformerSupport">false</value>
+        </record>
+        <number name="ui_step_index" type="Long">3</number>
+        <value name="nodePathNew">1.0</value>
+        <number name="nodeIndex" type="Long">0</number>
+        <number name="lineNumberForDebug" type="Long">3</number>
       </record>
     </record>
   </record>

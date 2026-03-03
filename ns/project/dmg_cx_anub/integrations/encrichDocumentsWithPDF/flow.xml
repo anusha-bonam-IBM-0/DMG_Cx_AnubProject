@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<FLOW VERSION="3.2" CLEANUP="false">
+<FLOW VERSION="3.2" CLEANUP="true">
   <COMMENT></COMMENT>
 
   <!-- nodes -->
@@ -9,7 +9,13 @@
   <COMMENT>capture retry properties</COMMENT>
 </MAP>
 
-<SEQUENCE NAME="NEW" EXIT-ON="FAILURE">
+<LOOP NAME="REPEAT" IN-ARRAY="/documents">
   <COMMENT></COMMENT>
-</SEQUENCE>
+
+  <!-- nodes -->
+
+<INVOKE NAME="Flow" SERVICE="pub.flow:debugLog">
+  <COMMENT></COMMENT>
+</INVOKE>
+</LOOP>
 </FLOW>

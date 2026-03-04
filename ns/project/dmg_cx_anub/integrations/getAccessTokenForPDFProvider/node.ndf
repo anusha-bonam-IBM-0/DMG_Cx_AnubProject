@@ -80,9 +80,8 @@
   <value name="retry_max">0</value>
   <value name="retry_interval">0</value>
   <record name="node_hints" javaclass="com.wm.util.Values">
-    <value name="createdBy">Anusha.Bonam@ibm.com</value>
-    <value name="createdDate">1772529624572</value>
-    <value name="lastModifiedDate">1772529624572</value>
+    <value name="lastModifiedBy">Anusha.Bonam@ibm.com</value>
+    <value name="lastModifiedDate">1772605405980</value>
     <value name="displayName">getAccessTokenForPDFProvider</value>
     <value name="description"></value>
     <record name="stepNodeHints" javaclass="com.wm.util.Values">
@@ -103,6 +102,7 @@
         </array>
         <array name="lookupTransformer" type="object" depth="1" javaclass="java.lang.Object">
         </array>
+        <value name="nodePathForDebug">0</value>
       </record>
       <record name="/0/0" javaclass="com.wm.util.Values">
       </record>
@@ -129,20 +129,16 @@
         <value name="nodePathNew">1</value>
         <number name="nodeIndex" type="Long">1</number>
         <number name="lineNumberForDebug" type="Long">2</number>
+        <value name="nodePathForDebug">1</value>
       </record>
       <record name="/1/0" javaclass="com.wm.util.Values">
         <value name="name">BRANCH</value>
         <value name="itemType">CONTROLS</value>
         <value name="value"></value>
         <Boolean name="is_empty">false</Boolean>
+        <value name="nodePathForDebug">1.0</value>
       </record>
       <null name="/1/0/0"/>
-      <record name="/1/1" javaclass="com.wm.util.Values">
-        <value name="name">BRANCH</value>
-        <value name="itemType">CONTROLS</value>
-        <value name="value"></value>
-      </record>
-      <null name="/1/1/0"/>
     </record>
   </record>
   <value name="svc_in_validator_options">none</value>

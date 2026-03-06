@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<FLOW VERSION="3.2" CLEANUP="false">
+  <COMMENT></COMMENT>
+
+  <!-- nodes -->
+
+<MAP NAME="TRANSFORM" TIMEOUT="" MODE="STANDALONE">
+</MAP>
+
+<SEQUENCE NAME="SEQUENCE" TIMEOUT="" EXIT-ON="FAILURE">
+  <COMMENT></COMMENT>
+
+  <!-- nodes -->
+
+<SEQUENCE TIMEOUT="" EXIT-ON="FAILURE" FORM="TRY">
+  <COMMENT></COMMENT>
+
+  <!-- nodes -->
+
+<RETRY NAME="REPEATFORCOUNT" TIMEOUT="" COUNT="2" BACK-OFF="0" LOOP-ON="SUCCESS">
+  <COMMENT></COMMENT>
+
+  <!-- nodes -->
+
+<MAP NAME="TRANSFORM" TIMEOUT="" MODE="STANDALONE">
+</MAP>
+
+<INVOKE NAME="Flow" SERVICE="pub.flow:debugLog">
+  <COMMENT></COMMENT>
+</INVOKE>
+</RETRY>
+</SEQUENCE>
+
+<SEQUENCE EXIT-ON="FAILURE" FORM="CATCH">
+  <COMMENT></COMMENT>
+
+  <!-- nodes -->
+
+<DO NAME="DO"  MAXITERATIONS="-1">
+
+  <!-- nodes -->
+
+<MAP NAME="TRANSFORM" TIMEOUT="" MODE="STANDALONE">
+</MAP>
+
+<INVOKE NAME="INTEGRATIONS" SERVICE="project.dmg_cx_anub.integrations:refreshAccessToken">
+  <COMMENT></COMMENT>
+</INVOKE>
+
+<UNTIL NAME="UNTIL" CONDITION="((%/$iterationCount%&lt;2))">
+</UNTIL>
+</DO>
+</SEQUENCE>
+</SEQUENCE>
+</FLOW>

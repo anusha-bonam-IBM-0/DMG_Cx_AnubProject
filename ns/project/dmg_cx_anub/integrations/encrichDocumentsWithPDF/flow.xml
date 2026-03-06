@@ -251,14 +251,17 @@
   <!-- nodes -->
 
 <SWITCH NAME="SWITCH"  SWITCHKEY="/documents/send_doc_to_customer">
+  <COMMENT></COMMENT>
 
   <!-- nodes -->
 
 <SEQUENCE EXIT-ON="FAILURE" FORM="CASE"  CASEVALUE="true">
+  <COMMENT></COMMENT>
 
   <!-- nodes -->
 
 <INVOKE NAME="Flow" SERVICE="pub.flow:debugLog">
+  <COMMENT></COMMENT>
 
   <!-- nodes -->
 
@@ -847,6 +850,7 @@
   <!-- nodes -->
 
 <INVOKE NAME="Flow" SERVICE="pub.flow:debugLog">
+  <COMMENT></COMMENT>
 
   <!-- nodes -->
 
@@ -984,4 +988,8 @@
 </SWITCH>
 </RETRY>
 </LOOP>
+
+<SEQUENCE NAME="NEW" EXIT-ON="FAILURE">
+  <COMMENT></COMMENT>
+</SEQUENCE>
 </FLOW>

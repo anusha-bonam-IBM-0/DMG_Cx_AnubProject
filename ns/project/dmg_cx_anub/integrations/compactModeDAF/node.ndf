@@ -45,9 +45,8 @@
   <value name="retry_max">0</value>
   <value name="retry_interval">0</value>
   <record name="node_hints" javaclass="com.wm.util.Values">
-    <value name="createdBy">Anusha.Bonam@ibm.com</value>
-    <value name="createdDate">1772775956987</value>
-    <value name="lastModifiedDate">1772775956987</value>
+    <value name="lastModifiedBy">Anusha.Bonam@ibm.com</value>
+    <value name="lastModifiedDate">1773035937965</value>
     <value name="displayName">compactModeDAF</value>
     <value name="description"></value>
     <record name="stepNodeHints" javaclass="com.wm.util.Values">
@@ -57,6 +56,7 @@
         <value name="nodePathNew">0</value>
         <number name="nodeIndex" type="Long">0</number>
         <number name="lineNumberForDebug" type="Long">1</number>
+        <value name="nodePathForDebug">0</value>
       </record>
       <record name="/1" javaclass="com.wm.util.Values">
         <value name="name">BLOCK</value>
@@ -64,6 +64,7 @@
         <value name="nodePathNew">1</value>
         <number name="nodeIndex" type="Long">1</number>
         <number name="lineNumberForDebug" type="Long">2</number>
+        <value name="nodePathForDebug">1</value>
       </record>
       <null name="/1/0"/>
       <record name="/1/0/0" javaclass="com.wm.util.Values">
@@ -79,6 +80,7 @@
           <value name="displayLabel">value</value>
           <value name="dataType">number</value>
         </record>
+        <value name="nodePathForDebug">1.0.0</value>
       </record>
       <record name="/1/0/0/0" javaclass="com.wm.util.Values">
         <value name="itemType">CONTROLS</value>
@@ -86,6 +88,7 @@
         <value name="nodePathNew">1.0.0.0</value>
         <number name="nodeIndex" type="Long">0</number>
         <number name="lineNumberForDebug" type="Long">5</number>
+        <value name="nodePathForDebug">1.0.0.0</value>
       </record>
       <record name="/1/0/0/1" javaclass="com.wm.util.Values">
         <null name="name"/>
@@ -106,6 +109,8 @@
         <value name="nodePathNew">1.0.0.1</value>
         <number name="nodeIndex" type="Long">1</number>
         <number name="lineNumberForDebug" type="Long">6</number>
+        <Boolean name="serviceReferenceResolved">true</Boolean>
+        <value name="nodePathForDebug">1.0.0.1</value>
       </record>
       <null name="/1/1"/>
       <record name="/1/1/0" javaclass="com.wm.util.Values">
@@ -124,15 +129,25 @@
         <value name="nodePathNew">1.1.0</value>
         <number name="nodeIndex" type="Long">0</number>
         <number name="lineNumberForDebug" type="Long">8</number>
+        <value name="nodePathForDebug">1.1.0</value>
       </record>
       <record name="/1/1/0/0" javaclass="com.wm.util.Values">
         <value name="itemType">CONTROLS</value>
         <value name="name">TRANSFORM</value>
+        <value name="nodePathForDebug">1.1.0.0</value>
+        <value name="nodePathNew">1.1.0.0</value>
+        <number name="nodeIndex" type="Long">0</number>
+        <number name="lineNumberForDebug" type="Long">9</number>
       </record>
       <record name="/1/1/0/1" javaclass="com.wm.util.Values">
         <value name="name">refreshAccessToken</value>
         <value name="displayName">refreshAccessToken</value>
         <value name="itemType">INTEGRATIONS</value>
+        <Boolean name="serviceReferenceResolved">true</Boolean>
+        <value name="nodePathForDebug">1.1.0.1</value>
+        <value name="nodePathNew">1.1.0.1</value>
+        <number name="nodeIndex" type="Long">1</number>
+        <number name="lineNumberForDebug" type="Long">10</number>
       </record>
       <record name="/1/1/0/2" javaclass="com.wm.util.Values">
         <value name="name">UNTIL</value>
@@ -147,9 +162,10 @@
           <Boolean name="resetOnfocusout">true</Boolean>
           <Boolean name="displayIcon">true</Boolean>
         </record>
-        <value name="nodePathNew">1.1.0.1</value>
-        <number name="nodeIndex" type="Long">1</number>
-        <number name="lineNumberForDebug" type="Long">10</number>
+        <value name="nodePathNew">1.1.0.2</value>
+        <number name="nodeIndex" type="Long">2</number>
+        <number name="lineNumberForDebug" type="Long">11</number>
+        <value name="nodePathForDebug">1.1.0.2</value>
       </record>
     </record>
   </record>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<FLOW VERSION="3.2" CLEANUP="false">
+<FLOW VERSION="3.2" CLEANUP="true">
   <COMMENT></COMMENT>
 
   <!-- nodes -->
@@ -38,6 +38,7 @@
   <!-- nodes -->
 
 <DO NAME="DO"  MAXITERATIONS="-1">
+  <COMMENT></COMMENT>
 
   <!-- nodes -->
 
@@ -48,7 +49,7 @@
   <COMMENT></COMMENT>
 </INVOKE>
 
-<UNTIL NAME="UNTIL" CONDITION="((%/$iterationCount%&lt;2))">
+<UNTIL NAME="UNTIL" CONDITION="((%/accessToken%))">
 </UNTIL>
 </DO>
 </SEQUENCE>

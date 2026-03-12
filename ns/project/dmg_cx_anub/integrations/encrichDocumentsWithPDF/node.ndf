@@ -83,7 +83,7 @@
   <value name="retry_interval">0</value>
   <record name="node_hints" javaclass="com.wm.util.Values">
     <value name="lastModifiedBy">Anusha.Bonam@ibm.com</value>
-    <value name="lastModifiedDate">1773322830042</value>
+    <value name="lastModifiedDate">1773324647291</value>
     <value name="displayName">encrichDocumentsWithPDF</value>
     <value name="description"></value>
     <record name="stepNodeHints" javaclass="com.wm.util.Values">
@@ -466,6 +466,7 @@
         <value name="nodePathNew">1.1.0.0.3.0.2</value>
         <number name="nodeIndex" type="Long">2</number>
         <number name="lineNumberForDebug" type="Long">23</number>
+        <value name="nodePathForDebug">1.1.0.0.3.0.2</value>
       </record>
       <record name="/1/1/0/0/3/0/2/0" javaclass="com.wm.util.Values">
         <value name="name">BRANCH</value>
@@ -475,6 +476,7 @@
         <value name="nodePathNew">1.1.0.0.3.0.2.0</value>
         <number name="nodeIndex" type="Long">0</number>
         <number name="lineNumberForDebug" type="Long">24</number>
+        <value name="nodePathForDebug">1.1.0.0.3.0.2.0</value>
       </record>
       <record name="/1/1/0/0/3/0/2/0/0" javaclass="com.wm.util.Values">
         <value name="name">BRANCH</value>
@@ -482,6 +484,7 @@
         <value name="nodePathNew">1.1.0.0.3.0.2.0.0</value>
         <number name="nodeIndex" type="Long">0</number>
         <number name="lineNumberForDebug" type="Long">25</number>
+        <value name="nodePathForDebug">1.1.0.0.3.0.2.0.0</value>
       </record>
       <record name="/1/1/0/0/3/0/2/0/0/0" javaclass="com.wm.util.Values">
         <value name="name">EXPRESSION</value>
@@ -489,6 +492,7 @@
         <value name="nodePathNew">1.1.0.0.3.0.2.0.0.0</value>
         <number name="nodeIndex" type="Long">0</number>
         <number name="lineNumberForDebug" type="Long">26</number>
+        <value name="nodePathForDebug">1.1.0.0.3.0.2.0.0.0</value>
       </record>
       <record name="/1/1/0/0/3/0/2/0/0/0/0" javaclass="com.wm.util.Values">
         <null name="name"/>
@@ -510,6 +514,8 @@
         <null name="mapSet"/>
         <null name="outputMapSet"/>
         <Boolean name="xmlMapsetSupported">true</Boolean>
+        <Boolean name="serviceReferenceResolved">true</Boolean>
+        <value name="nodePathForDebug">1.1.0.0.3.0.2.0.0.0.0</value>
       </record>
       <record name="/1/1/0/0/3/0/2/0/0/1" javaclass="com.wm.util.Values">
         <value name="name">EXPRESSION</value>
@@ -517,6 +523,7 @@
         <value name="nodePathNew">1.1.0.0.3.0.2.0.0.1</value>
         <number name="nodeIndex" type="Long">1</number>
         <number name="lineNumberForDebug" type="Long">28</number>
+        <value name="nodePathForDebug">1.1.0.0.3.0.2.0.0.1</value>
       </record>
       <record name="/1/1/0/0/3/0/2/0/0/1/0" javaclass="com.wm.util.Values">
         <null name="name"/>
@@ -538,6 +545,8 @@
         <null name="mapSet"/>
         <null name="outputMapSet"/>
         <Boolean name="xmlMapsetSupported">true</Boolean>
+        <Boolean name="serviceReferenceResolved">true</Boolean>
+        <value name="nodePathForDebug">1.1.0.0.3.0.2.0.0.1.0</value>
       </record>
       <record name="/1/1/0/0/3/0/2/0/0/1/1" javaclass="com.wm.util.Values">
         <value name="itemType">CONTROLS</value>
@@ -556,6 +565,7 @@
         </array>
         <array name="lookupTransformer" type="object" depth="1" javaclass="java.lang.Object">
         </array>
+        <value name="nodePathForDebug">1.1.0.0.3.0.2.0.0.1.1</value>
       </record>
       <null name="/1/1/0/0/3/0/2/0/0/1/1/0"/>
       <record name="/1/1/0/0/3/0/2/1" javaclass="com.wm.util.Values">
@@ -565,6 +575,7 @@
         <value name="nodePathNew">1.1.0.0.3.0.2.1</value>
         <number name="nodeIndex" type="Long">1</number>
         <number name="lineNumberForDebug" type="Long">31</number>
+        <value name="nodePathForDebug">1.1.0.0.3.0.2.1</value>
       </record>
       <record name="/1/1/0/0/3/0/2/1/0" javaclass="com.wm.util.Values">
         <null name="name"/>
@@ -586,6 +597,8 @@
         <null name="mapSet"/>
         <null name="outputMapSet"/>
         <Boolean name="xmlMapsetSupported">true</Boolean>
+        <Boolean name="serviceReferenceResolved">true</Boolean>
+        <value name="nodePathForDebug">1.1.0.0.3.0.2.1.0</value>
       </record>
       <record name="/1/1/0/0/3/0/2/1/1" javaclass="com.wm.util.Values">
         <value name="itemType">CONTROLS</value>
@@ -604,14 +617,17 @@
         </array>
         <array name="lookupTransformer" type="object" depth="1" javaclass="java.lang.Object">
         </array>
+        <value name="nodePathForDebug">1.1.0.0.3.0.2.1.1</value>
       </record>
       <null name="/1/1/0/0/3/0/2/1/1/0"/>
       <record name="/1/1/0/0/3/0/2/1/1/1" javaclass="com.wm.util.Values">
       </record>
       <record name="/2" javaclass="com.wm.util.Values">
-        <value name="itemType">ALL</value>
-        <value name="name">NEW</value>
-        <value name="nodePathForDebug">2</value>
+        <value name="itemType">CONTROLS</value>
+        <value name="name">TRANSFORM</value>
+        <value name="nodePathNew">2</value>
+        <number name="nodeIndex" type="Long">2</number>
+        <number name="lineNumberForDebug" type="Long">34</number>
       </record>
     </record>
   </record>

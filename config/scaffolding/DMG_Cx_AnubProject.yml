@@ -7,3 +7,36 @@ packages:
   gitUrl: https://github.com/anusha-bonam-IBM-0
   gitUsername: anusha-bonam-IBM-0
   gitBranch: main
+services:
+- serviceName: project.dmg_cx_anub.integrations:compactModeDAF
+  packages:
+  - name: DMG_Cx_AnubProject
+    version: "1.0"
+- serviceName: pub.flow:debugLog
+  packages:
+  - name: WmPublic
+    version: 12.1.0.0.802
+- serviceName: project.dmg_cx_anub.integrations:refreshAccessToken
+  packages:
+  - name: DMG_Cx_AnubProject
+    version: "1.0"
+- serviceName: pub.client:http
+  packages:
+  - name: WmPublic
+    version: 12.1.0.0.802
+- serviceName: pub.json:jsonStreamToDocument
+  packages:
+  - name: WmPublic
+    version: 12.1.0.0.802
+- serviceName: project.dmg_cx_anub.integrations:encrichDocumentsWithPDF
+  packages:
+  - name: DMG_Cx_AnubProject
+    version: "1.0"
+- serviceName: project.dmg_cx_anub.integrations:getAccessTokenForPDFProvider
+  packages:
+  - name: DMG_Cx_AnubProject
+    version: "1.0"
+- serviceName: pub.string:bytesToString
+  packages:
+  - name: WmPublic
+    version: 12.1.0.0.802

@@ -83,7 +83,7 @@
   <value name="retry_interval">0</value>
   <record name="node_hints" javaclass="com.wm.util.Values">
     <value name="lastModifiedBy">Anusha.Bonam@ibm.com</value>
-    <value name="lastModifiedDate">1773035856975</value>
+    <value name="lastModifiedDate">1773318460112</value>
     <value name="displayName">encrichDocumentsWithPDF</value>
     <value name="description"></value>
     <record name="stepNodeHints" javaclass="com.wm.util.Values">
@@ -146,6 +146,7 @@
         <null name="mapSet"/>
         <null name="outputMapSet"/>
         <value name="nodePathForDebug">1.0</value>
+        <Boolean name="xmlMapsetSupported">true</Boolean>
       </record>
       <record name="/1/1" javaclass="com.wm.util.Values">
         <value name="name">REPEATFORCOUNT</value>
@@ -220,9 +221,14 @@
         <null name="outputMapSet"/>
         <Boolean name="serviceReferenceResolved">true</Boolean>
         <value name="nodePathForDebug">1.1.0.0.0</value>
+        <Boolean name="xmlMapsetSupported">true</Boolean>
       </record>
       <null name="/1/1/0/0/1"/>
-      <null name="/1/1/0/0/1/0"/>
+      <record name="/1/1/0/0/1/0" javaclass="com.wm.util.Values">
+        <value name="name">getAccessTokenForPDFProvider</value>
+        <value name="displayName">getAccessTokenForPDFProvider</value>
+        <value name="itemType">INTEGRATIONS</value>
+      </record>
       <record name="/1/1/0/0/1/1" javaclass="com.wm.util.Values">
         <null name="name"/>
         <value name="itemType">SERVICES</value>

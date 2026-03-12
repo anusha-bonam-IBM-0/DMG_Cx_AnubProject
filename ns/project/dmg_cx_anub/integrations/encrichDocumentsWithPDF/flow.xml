@@ -381,8 +381,8 @@
 
   <!-- nodes -->
 
-<SEQUENCE NAME="NEW" EXIT-ON="FAILURE">
-</SEQUENCE>
+<INVOKE NAME="INTEGRATIONS" SERVICE="project.dmg_cx_anub.integrations:getAccessTokenForPDFProvider">
+</INVOKE>
 
 <INVOKE NAME="Client" SERVICE="pub.client:http">
   <COMMENT>fetch PDF</COMMENT>

@@ -83,7 +83,7 @@
   <value name="retry_interval">0</value>
   <record name="node_hints" javaclass="com.wm.util.Values">
     <value name="lastModifiedBy">Anusha.Bonam@ibm.com</value>
-    <value name="lastModifiedDate">1773324647291</value>
+    <value name="lastModifiedDate">1773324737434</value>
     <value name="displayName">encrichDocumentsWithPDF</value>
     <value name="description"></value>
     <record name="stepNodeHints" javaclass="com.wm.util.Values">
@@ -628,6 +628,29 @@
         <value name="nodePathNew">2</value>
         <number name="nodeIndex" type="Long">2</number>
         <number name="lineNumberForDebug" type="Long">34</number>
+        <number name="ui_step_index" type="Long">34</number>
+        <array name="map" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
+        <array name="mapSet" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
+        <array name="mapDelete" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
+        <array name="transformer" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
+        <array name="lookupTransformer" type="object" depth="1" javaclass="java.lang.Object">
+        </array>
+      </record>
+      <record name="/2/0" javaclass="com.wm.util.Values">
+      </record>
+      <record name="/2/1" javaclass="com.wm.util.Values">
+      </record>
+      <record name="/2/2" javaclass="com.wm.util.Values">
+      </record>
+      <record name="/2/3" javaclass="com.wm.util.Values">
+      </record>
+      <record name="/2/4" javaclass="com.wm.util.Values">
+      </record>
+      <record name="/2/5" javaclass="com.wm.util.Values">
       </record>
     </record>
   </record>

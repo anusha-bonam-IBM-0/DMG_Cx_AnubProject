@@ -81,7 +81,7 @@
   <value name="retry_interval">0</value>
   <record name="node_hints" javaclass="com.wm.util.Values">
     <value name="lastModifiedBy">Anusha.Bonam@ibm.com</value>
-    <value name="lastModifiedDate">1773325732668</value>
+    <value name="lastModifiedDate">1773347040944</value>
     <value name="displayName">refreshAccessToken</value>
     <value name="description"></value>
     <record name="stepNodeHints" javaclass="com.wm.util.Values">
@@ -99,6 +99,8 @@
         <null name="mapSet"/>
         <null name="outputMapSet"/>
         <Boolean name="xmlMapsetSupported">true</Boolean>
+        <Boolean name="serviceReferenceResolved">true</Boolean>
+        <value name="nodePathForDebug">0</value>
       </record>
       <record name="/1" javaclass="com.wm.util.Values">
         <value name="itemType">SERVICES</value>
@@ -114,6 +116,8 @@
         <null name="mapSet"/>
         <null name="outputMapSet"/>
         <Boolean name="xmlMapsetSupported">true</Boolean>
+        <Boolean name="serviceReferenceResolved">true</Boolean>
+        <value name="nodePathForDebug">1</value>
       </record>
       <record name="/2" javaclass="com.wm.util.Values">
         <value name="name">SWITCH</value>
@@ -129,6 +133,7 @@
         <value name="nodePathNew">2</value>
         <number name="nodeIndex" type="Long">2</number>
         <number name="lineNumberForDebug" type="Long">3</number>
+        <value name="nodePathForDebug">2</value>
       </record>
       <record name="/2/0" javaclass="com.wm.util.Values">
         <value name="name">BRANCH</value>
@@ -137,6 +142,7 @@
         <value name="nodePathNew">2.0</value>
         <number name="nodeIndex" type="Long">0</number>
         <number name="lineNumberForDebug" type="Long">4</number>
+        <value name="nodePathForDebug">2.0</value>
       </record>
       <record name="/2/0/0" javaclass="com.wm.util.Values">
         <value name="itemType">SERVICES</value>
@@ -149,6 +155,8 @@
         <value name="nodePathNew">2.0.0</value>
         <number name="nodeIndex" type="Long">0</number>
         <number name="lineNumberForDebug" type="Long">5</number>
+        <Boolean name="serviceReferenceResolved">true</Boolean>
+        <value name="nodePathForDebug">2.0.0</value>
       </record>
       <null name="/2/0/1"/>
       <null name="/2/0/1/0"/>
@@ -157,10 +165,12 @@
         <value name="name">BRANCH</value>
         <value name="itemType">CONTROLS</value>
         <value name="value"></value>
+        <value name="nodePathForDebug">2.1</value>
       </record>
       <record name="/2/1/0" javaclass="com.wm.util.Values">
         <value name="name">EXIT</value>
         <value name="itemType">CONTROLS</value>
+        <value name="nodePathForDebug">2.1.0</value>
       </record>
     </record>
   </record>

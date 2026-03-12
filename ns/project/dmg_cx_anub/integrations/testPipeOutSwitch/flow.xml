@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<FLOW VERSION="3.2" CLEANUP="false">
+  <COMMENT></COMMENT>
+
+  <!-- nodes -->
+
+<MAP NAME="TRANSFORM" TIMEOUT="" MODE="STANDALONE">
+
+  <!-- nodes -->
+
+<MAPCOPY FROM="/a;1;0" TO="/pout;1;0">
+</MAPCOPY>
+</MAP>
+
+<SWITCH NAME="SWITCH"  SWITCHKEY="/a">
+
+  <!-- nodes -->
+
+<SEQUENCE EXIT-ON="FAILURE" FORM="CASE"  CASEVALUE="true">
+
+  <!-- nodes -->
+
+<INVOKE NAME="String" SERVICE="pub.string:bytesToString">
+  <COMMENT></COMMENT>
+
+  <!-- nodes -->
+
+<MAP MODE="INPUT">
+  <COMMENT></COMMENT>
+</MAP>
+
+<MAP MODE="OUTPUT">
+  <COMMENT></COMMENT>
+
+  <!-- nodes -->
+
+<MAPCOPY FROM="/string;1;0" TO="/strbytespout;1;0">
+</MAPCOPY>
+</MAP>
+</INVOKE>
+
+<SWITCH NAME="SWITCH"  SWITCHKEY="/undefined">
+
+  <!-- nodes -->
+
+<SEQUENCE EXIT-ON="FAILURE" FORM="CASE"  CASEVALUE="">
+
+  <!-- nodes -->
+
+<SEQUENCE NAME="NEW" EXIT-ON="FAILURE">
+</SEQUENCE>
+</SEQUENCE>
+
+<SEQUENCE NAME="$default" EXIT-ON="FAILURE" FORM="CASE"  CASEVALUE="$default">
+
+  <!-- nodes -->
+
+<SEQUENCE NAME="NEW" EXIT-ON="FAILURE">
+</SEQUENCE>
+</SEQUENCE>
+</SWITCH>
+</SEQUENCE>
+
+<SEQUENCE NAME="$default" EXIT-ON="FAILURE" FORM="CASE"  CASEVALUE="$default">
+
+  <!-- nodes -->
+
+<SEQUENCE NAME="NEW" EXIT-ON="FAILURE">
+</SEQUENCE>
+</SEQUENCE>
+</SWITCH>
+
+<SWITCH NAME="SWITCH"  SWITCHKEY="/pout">
+
+  <!-- nodes -->
+
+<SEQUENCE EXIT-ON="FAILURE" FORM="CASE"  CASEVALUE="">
+
+  <!-- nodes -->
+
+<SEQUENCE NAME="NEW" EXIT-ON="FAILURE">
+</SEQUENCE>
+</SEQUENCE>
+
+<SEQUENCE NAME="$default" EXIT-ON="FAILURE" FORM="CASE"  CASEVALUE="$default">
+
+  <!-- nodes -->
+
+<SEQUENCE NAME="NEW" EXIT-ON="FAILURE">
+</SEQUENCE>
+</SEQUENCE>
+</SWITCH>
+</FLOW>
